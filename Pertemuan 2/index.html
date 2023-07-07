@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YiTube</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 10px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header .nav-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      header .nav-title a {
+        color: black;
+      }
+
+      header a {
+        text-decoration: none;
+      }
+
+      header .nav-item {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      header .nav-item a {
+        color: #606060;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      header .nav-item a:hover {
+        opacity: 0.7;
+        text-decoration: underline;
+      }
+
+      main {
+        background-color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        gap: 3rem;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      main .content {
+        flex: 3;
+      }
+
+      main aside {
+        flex: 1;
+      }
+
+      .content .video-section iframe {
+        width: 100%;
+        height: 500px;
+      }
+
+      .content .video-section div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .content .video-section h2 {
+        margin: 10px 0 0 0;
+        padding: 0;
+      }
+
+      .content .video-section p {
+        margin: 0;
+        padding: 0;
+        color: #64748b;
+        font-size: 14px;
+      }
+
+      .ads {
+        width: 100%;
+        height: 100px;
+        border: 2px dashed #606060;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .related-videos {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .related-videos .related-video {
+        display: inline-flex;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+          background: #e2e8f0;
+        }
+      }
+
+      .related-videos .related-video img {
+        width: 80px;
+        height: fit-content;
+        border-radius: 3px;
+        object-fit: cover;
+      }
+
+      .related-video__title {
+        display: block;
+      }
+
+      .related-video__title h3 {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .related-video__title p {
+        font-size: 12px;
+        color: #64748b;
+        margin: 3px 0 0 0;
+        padding: 0;
+      }
+
+      .channel-name {
+        background: #000;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .channel-name > div {
+        background-color: #fff;
+        width: fit-content;
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .channel-name > div > img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .channel-name > button {
+        width: fit-content;
+        border-radius: 2px;
+        padding: 2px 10px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-title">
+        <a href="#">YiTube</a>
+      </div>
+      <div class="nav-item">
+        <a href="#">Home</a>
+        <a href="#">Videos</a>
+        <a href="#">Channels</a>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <section class="video-section">
+          <iframe
+            src="https://www.youtube.com/embed/6EOHLfUTtR8"
+            type="video/mp4"
+          ></iframe>
+          <div>
+            <h2>INDONESIA VS ARGENTINA HIGLIGHT</h2>
+            <div class="channel-name">
+              <div>
+                <img
+                  src="https://yt3.ggpht.com/w7cNCTBQtTQYbrNwvVKis8bDtExIL-qoETU8BnFc2oj3tMgffdOnI0dPoyvZ4e5A5PFjOqRe=s88-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                />
+                <p>Next Carlos</p>
+              </div>
+              <button>Subscribe</button>
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+              sunt odit nemo similique quas expedita nam iure, exercitationem
+              possimus. Illum excepturi veritatis sunt inventore culpa, nemo
+              omnis alias expedita minima corrupti rem nisi aut recusandae in
+              molestiae vel aliquam quam reprehenderit ratione deserunt et
+              corporis. Unde dignissimos qui quas ducimus dolorum, veritatis
+              expedita saepe assumenda asperiores cum dolore, laboriosam quod!
+            </p>
+          </div>
+        </section>
+      </div>
+      <aside>
+        <div class="ads">
+          <h2>Ads</h2>
+        </div>
+        <div class="related-videos">
+          <h2 style="margin: 20px 0 0 0; padding: 0">Related Videos</h2>
+          <div class="related-video">
+            <img
+              src="https://i.ytimg.com/vi/08IoXpGvYQ8/hqdefault.jpg"
+              alt=""
+            />
+            <div class="related-video__title">
+              <h3>Makan Makan di Warung Kondre!</h3>
+              <p>Next Carlos</p>
+            </div>
+          </div>
+          <div class="related-video">
+            <img
+              src="https://i.ytimg.com/vi/C6vCE_GXH8Q/hqdefault.jpg"
+              alt=""
+            />
+            <div class="related-video__title">
+              <h3>Orang Jepang Makan Makanan Indo</h3>
+              <p>Nihongo Mantappu</p>
+            </div>
+          </div>
+          <div class="related-video">
+            <img
+              src="https://i.ytimg.com/vi/fAM1S5xhBHY/hqdefault.jpg"
+              alt=""
+            />
+            <div class="related-video__title">
+              <h3>Bule Nyoba Naik KAI</h3>
+              <p>Wild Carlos</p>
+            </div>
+          </div>
+          <div class="related-video">
+            <img
+              src="https://i.ytimg.com/vi/kcnwI_5nKyA/hqdefault.jpg"
+              alt=""
+            />
+            <div class="related-video__title">
+              <h3>Tutorial React Paling Masuk Akal</h3>
+              <p>Sandhika Galih</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="footer-item">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer-item">
+        <a href="#">YiTube</a>
+      </div>
+      <div class="footer-item">
+        <a href="#">YiTube</a>
+      </div>
+    </footer>
+  </body>
+</html>
